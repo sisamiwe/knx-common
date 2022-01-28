@@ -197,6 +197,36 @@
 #define I2C_1WIRE_DEVICE_ADDRESSS 0x18 // Address of first DS2482 1-Wire-Busmaster chip, used are 0x19, 0x1A, 0x1B
 #define I2C_EEPROM_DEVICE_ADDRESSS 0x50 // Address of 24LC256 eeprom chip
 #endif
+#ifdef BOARD_MIWE_XIAO_V1
+#define PROG_LED_PIN 11
+#define PROG_LED_PIN_ACTIVE_ON LOW
+#define PROG_BUTTON_PIN 10
+#define PROG_BUTTON_PIN_INTERRUPT_ON FALLING
+#define SAVE_INTERRUPT_PIN 1
+#define LED_YELLOW_PIN 13
+#define COUNT_1WIRE_BUSMASTER 1
+#define COUNT_1WIRE_CHANNEL 30
+// Buzzer
+#define BUZZER_PIN 9
+#define I2C_1WIRE_DEVICE_ADDRESSS 0x18  // Address of DS2484 1-Wire-Busmaster chip
+#define I2C_EEPROM_DEVICE_ADDRESSS 0x50 // Address of 24LC256 eeprom chip
+#define I2C_RGBLED_DEVICE_ADDRESS 0x60  // Address of PCA9632 RBGW-LED-Driver
+#endif
+#ifdef BOARD_MIWE_GYSAMD21_V1
+#define PROG_LED_PIN 13
+#define PROG_LED_PIN_ACTIVE_ON HIGH
+#define PROG_BUTTON_PIN 11
+#define PROG_BUTTON_PIN_INTERRUPT_ON FALLING
+#define SAVE_INTERRUPT_PIN 10
+#define LED_YELLOW_PIN PIN_LED_TXL
+#define COUNT_1WIRE_BUSMASTER 1
+#define COUNT_1WIRE_CHANNEL 30
+// Buzzer
+#define BUZZER_PIN 9
+#define I2C_1WIRE_DEVICE_ADDRESSS 0x18  // Address of DS2484 1-Wire-Busmaster chip
+#define I2C_EEPROM_DEVICE_ADDRESSS 0x50 // Address of 24LC256 eeprom chip
+#define I2C_RGBLED_DEVICE_ADDRESS 0x60  // Address of PCA9632 RBGW-LED-Driver
+#endif
 
 // board independent definitions
 
