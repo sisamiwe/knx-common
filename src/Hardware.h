@@ -206,6 +206,8 @@
 #define LED_YELLOW_PIN 13
 #define COUNT_1WIRE_BUSMASTER 1
 #define COUNT_1WIRE_CHANNEL 30
+#define COUNT_PM_CHANNEL 6
+#define COUNT_LOG_CHANNEL 80
 // Buzzer
 #define BUZZER_PIN 9
 #define I2C_1WIRE_DEVICE_ADDRESSS 0x18  // Address of DS2484 1-Wire-Busmaster chip
@@ -221,6 +223,8 @@
 #define LED_YELLOW_PIN PIN_LED_TXL
 #define COUNT_1WIRE_BUSMASTER 1
 #define COUNT_1WIRE_CHANNEL 30
+#define COUNT_PM_CHANNEL 6
+#define COUNT_LOG_CHANNEL 80
 // Buzzer
 #define BUZZER_PIN 9
 #define I2C_1WIRE_DEVICE_ADDRESSS 0x18  // Address of DS2484 1-Wire-Busmaster chip
